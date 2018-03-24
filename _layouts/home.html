@@ -1,0 +1,25 @@
+---
+layout: blog-main
+---
+
+{{ content }}
+<ul class="myposts">
+{% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title}}</a>
+    <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+{% endfor %}
+</ul>
+
+
+{% for post in site.posts %}
+<article>
+	<h2>
+		<a href="{{ post.url }}">
+			{{ post.title }}
+		</a>
+	</h2>
+	<time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+	{{ post.content }}
+</article>
+{% endfor %}

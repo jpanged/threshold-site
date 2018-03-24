@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>{{ site.title }} | {{ page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index">{{ site.title }}</a></h1>
+							</div>
+
+							<!-- Nav -->
+							{% include nav.html %}
+
+					</div>
+				</div>
+
+			<!-- Wrapper -->
+				<div id="wrapper">
+
+					<!-- Content -->
+						<div id="main" class="container">
+							<div class="row">
+								<div id="content" class="12u">
+									<article>
+										<header>
+											<h2>No Sidebar</h2>
+											<span class="byline">Pellentesque quis elit non lectus gravida blandit</span>
+										</header>
+										{{ content }}
+
+									</article>
+								</div>
+							</div>
+						</div>
+
+				</div>
+
+			{% include footer.html %}
+
+	</body>
+</html>
