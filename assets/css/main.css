@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900");
-@import url("font-awesome.min.css");
 
 /* Reset */
 
@@ -1702,26 +1701,6 @@
 
 		.button:hover {
 			background: #ca4047;
-		}
-
-/* Icons */
-
-	.fa {
-		text-decoration: none;
-	}
-
-		.fa:before {
-			display: inline-block;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		.fa.solo span {
-			display: none;
 		}
 
 /* Header */
