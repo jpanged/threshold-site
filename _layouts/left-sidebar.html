@@ -3,7 +3,7 @@
 <html>
 	<!-- Head  -->
 	{% include head.html %}
-	
+
 	<body class="left-sidebar">
 		<div id="page-wrapper">
 
@@ -56,7 +56,7 @@
 									<div id="content" class="8u 12u(narrower) important(narrower)">
 										<article>
 											<header>
-												<h2>Left Sidebar</h2>
+												<h2>{{ page.title }}</h2>
 												<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
 											</header>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus ut ligula ultrices viverra. Donec non odio lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus posuere pulvinar cursus. Nullam id ultricies neque. Curabitur id tellus a metus consectetur. Nullam id sapien mi, iaculis imperdiet magna. Fusce lacus ipsum, rhoncus at placerat eu, condimentum eu arcu. Nullam id sapien mi, iaculis imperdiet magna. Fusce lacus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus ut ligula ultrices viverra. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus.</p>
@@ -73,7 +73,16 @@
 
 				</div>
 
+			<!-- Footer -->
 			{% include footer.html %}
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

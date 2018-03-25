@@ -1,70 +1,73 @@
 <!DOCTYPE HTML>
-
+<!--
+	Threshold by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
 <html>
 	<!-- Head  -->
 	{% include head.html %}
-	
-	<body class="no-sidebar">
+
+	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header">
-					<div class="container">
-
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="index">{{ site.title }}</a></h1>
-							</div>
-
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Veroeros feugiat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="two-sidebar.html">Two Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</nav>
-
-					</div>
-				</div>
+				{% include header.html %}
 
 			<!-- Wrapper -->
 				<div id="wrapper">
 
 					<!-- Content -->
 						<div id="main" class="container">
-							<div class="row">
-								<div id="content" class="12u">
-									<article>
-										<header>
-											<h2>{{ page.title }}</h2>
-											<!-- <span class="byline">Pellentesque quis elit non lectus gravida blandit</span> -->
-										</header>
-										{{ content }}
+							<div class="row 200%">
 
-									</article>
-								</div>
+								<!-- Content -->
+									<div id="content" class="8u 12u(narrower)">
+										<article>
+											<header>
+												<h2>{{ page.title }}</h2>
+												<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+											</header>
+											{{ content }}
+
+										</article>
+									</div>
+
+								<!-- Sidebar -->
+									<div id="sidebar" class="4u 12u(narrower)">
+
+										<section>
+											<header>
+												<h2>Aenean metus iaculis</h2>
+											</header>
+											<p>Praesent semper mod quis eget. Etiam eu ante risus. Aliquam erat volutpat. Pellentesque viverra vulputate enim.</p>
+											<ul class="default">
+												<li><a href="#">Semper mod quis eget mi dolore</a></li>
+												<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+												<li><a href="#">Consequat etiam lorem phasellus</a></li>
+											</ul>
+											<a href="#" class="button alt">More Info</a>
+										</section>
+
+										<section>
+											<header>
+												<h2>Integer gravida</h2>
+											</header>
+											<p>Praesent semper mod quis eget. Etiam eu ante risus. Aliquam erat volutpat. Pellentesque viverra vulputate enim.</p>
+											<ul class="default">
+												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+												<li><a href="#">Semper mod quis eget mi dolore</a></li>
+												<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+												<li><a href="#">Consequat etiam lorem phasellus</a></li>
+												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+											</ul>
+											<a href="#" class="button alt">More Info</a>
+										</section>
+									</div>
+
 							</div>
 						</div>
 
@@ -109,10 +112,24 @@
 								</ul>
 							</div>
 
+						<!-- Newsletter -->
+							<div id="newsletter">
+								<div class="row">
+									<section class="6u 12u(narrower)">
+										<span>Fusce lobortis lorem at ipsum semper sagittis sui unteconvil sitamet interdium</span>
+									</section>
+									<section class="6u 12u(narrower)">
+										<form method="post" action="#" id="subscribe">
+											<input type="text" class="text" name="search" placeholder="Your email address" />
+											<a href="#" class="submit">Subscribe</a>
+										</form>
+									</section>
+								</div>
+							</div>
 
 						<!-- Copyright -->
 							<div id="copyright">
-								&copy; {{ site.title }}. All rights Reserved
+								&copy; Untitled. All rights Reserved
 							</div>
 
 					</div>

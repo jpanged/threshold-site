@@ -3,7 +3,7 @@
 <html>
 	<!-- Head  -->
 	{% include head.html %}
-	
+
 	<body class="no-sidebar">
 		<div id="page-wrapper">
 
@@ -19,7 +19,7 @@
 								<div id="content" class="12u">
 									<article>
 										<header>
-											<h2>No Sidebar</h2>
+											<h2>{{ page.title }}</h2>
 											<span class="byline">Pellentesque quis elit non lectus gravida blandit</span>
 										</header>
 										{{ content }}
@@ -31,7 +31,16 @@
 
 				</div>
 
+			<!-- Footer -->
 			{% include footer.html %}
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

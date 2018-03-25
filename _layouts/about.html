@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+	<!-- Head  -->
+	{% include head.html %}
+
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				{% include header.html %}
+
+			<!-- Wrapper -->
+				<div id="wrapper">
+
+					<!-- Content -->
+						<div id="main" class="container">
+							<div class="row 200%">
+
+								<!-- Sidebar -->
+									<div id="sidebar" class="4u 12u(narrower)">
+
+										<section>
+											<header>
+												<h2>Aenean metus iaculis</h2>
+											</header>
+											<p>Praesent semper mod quis eget. Etiam eu ante risus. Aliquam erat volutpat. Pellentesque viverra vulputate enim.</p>
+											<ul class="default">
+												<li><a href="#">Semper mod quis eget mi dolore</a></li>
+												<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+												<li><a href="#">Consequat etiam lorem phasellus</a></li>
+											</ul>
+											<a href="#" class="button alt">More Info</a>
+										</section>
+
+										<section>
+											<header>
+												<h2>Integer gravida</h2>
+											</header>
+											<p>Praesent semper mod quis eget. Etiam eu ante risus. Aliquam erat volutpat. Pellentesque viverra vulputate enim.</p>
+											<ul class="default">
+												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+												<li><a href="#">Semper mod quis eget mi dolore</a></li>
+												<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+												<li><a href="#">Consequat etiam lorem phasellus</a></li>
+												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+											</ul>
+											<a href="#" class="button alt">More Info</a>
+										</section>
+									</div>
+
+								<!-- Content -->
+									<div id="content" class="8u 12u(narrower) important(narrower)">
+										<article>
+											<header>
+												<h2>{{ page.title }}</h2>
+												<span class="byline">{{ page.desc[0] }}</span>
+											</header>
+											<p>{{ content }}</p>
+
+										</article>
+									</div>
+
+							</div>
+						</div>
+
+				</div>
+
+			<!-- Footer -->
+			{% include footer.html %}
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

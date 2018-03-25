@@ -1,8 +1,15 @@
 <!DOCTYPE HTML>
 
 <html>
-	<!-- Head  -->
-	{% include head.html %}
+	<head>
+	  <title>{{ site.title }} | {{ page.title }}</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <!-- Import CSS CSS -->
+	  <link rel="stylesheet" href="../../../assets/css/main.css" />
+	  <!-- Import Font Awesome 5 -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	</head>
 
 	<body class="no-sidebar">
 		<div id="page-wrapper">
@@ -20,10 +27,12 @@
 									<article>
 										<header>
 											<h2>{{ page.title }}</h2>
-											<span class="byline"><a href="../../../blog">Back</a></span>
+											<span class="byline"><a href="../../../updates">Back</a></span>
 										</header>
+
 										{{ content }}
 
+										<span class="byline"><a href="../../../updates">Back</a></span>
 									</article>
 								</div>
 							</div>
@@ -31,7 +40,16 @@
 
 				</div>
 
+			<!-- Footer -->
 			{% include footer.html %}
+
+			<!-- Scripts -->
+				<script src="../../../assets/js/jquery.min.js"></script>
+				<script src="../../../assets/js/jquery.dropotron.min.js"></script>
+				<script src="../../../assets/js/skel.min.js"></script>
+				<script src="../../../assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="../../../assets/js/main.js"></script>
 
 	</body>
 </html>

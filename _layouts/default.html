@@ -19,8 +19,8 @@
 								<section class="6u 12u(narrower)">
 									<div id="one">
 										<header>
-											<h2>Donec nec justo eget jelis facilisis</h2>
-											<span class="byline">Cestibulum auctor dapibus neque euismod inpharetra ultricies indiamed arcu</span>
+											<h2>{{ page.top_section[0] }}</h2>
+											<span class="byline">{{ page.top_section[1] }}</span>
 										</header>
 										<a href="#" class="button">Gravida beci</a>
 									</div>
@@ -51,12 +51,12 @@
 					<!-- Extra #2 -->
 						<div id="extra2" class="container">
 							<div class="row">
-								<section class="6u 12u(narrower)">
+								<!-- <section class="6u 12u(narrower)">
 									<header>
 										<h2>Aliquam tincidunt mauris eu risus</h2>
 										<span class="byline">Etiam pellentesque mauris ut lectus nunc tellus ante mattis eget gravida vitae ultricies</span>
 									</header>
-								</section>
+								</section> -->
 								<section class="6u 12u(narrower)">
 									<ul class="icon">
 										<li>
@@ -77,6 +77,23 @@
 									</ul>
 								</section>
 							</div>
+
+							<div class="row">
+								<section class="6u 12u(narrower)">
+									<ul class="icon">
+										<li>
+											<h1>Test</h1>
+										</li>
+										<li>
+											<h1>Test</h1>
+										</li>
+										<li>
+											<h1>Test</h1>
+										</li>
+									</ul>
+								</section>
+							</div>
+
 						</div>
 
 					<!-- Featured -->
@@ -118,6 +135,14 @@
 
 			<!-- Footer -->
 			{% include footer.html %}
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

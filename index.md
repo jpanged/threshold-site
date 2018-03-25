@@ -1,9 +1,14 @@
 ---
 title: Home
 layout: default
+top_section:
+- Cal Poly Computer Science Student
+- I'm passionate about leveraging technology as a medium to create positive and tangible change.
+qualities:
+- Leadership
+- Technical Skills
+- Communication
 ---
-
-# {{ page.title }}
 
 Content is written in [Markdown](https://learnxinyminutes.com/docs/markdown/). Plain text format allows you to focus on your **content**.
 
